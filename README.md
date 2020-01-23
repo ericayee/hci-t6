@@ -6,3 +6,6 @@
 Erica Yee
 yee.er@husky.neu.edu
 
+Maria Isabel Morel
+morel.m@husky.neu.edu
+
