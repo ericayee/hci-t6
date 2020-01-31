@@ -14,3 +14,4 @@ joseph.pr@husky.neu.edu
 
 ### Assignments
 * [T1 Team Proposal](assignments/T1-JosephMorelYee.pdf)
+* [T2 Requirements](assignments/T2-JosephMorelYee.pdf)
