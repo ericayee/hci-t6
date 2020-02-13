@@ -16,3 +16,4 @@ joseph.pr@husky.neu.edu
 * [T1 Team Proposal](assignments/T1-JosephMorelYee.pdf)
 * [T2 Requirements](assignments/T2-JosephMorelYee.pdf)
 * [T3 Design Sketches](assignments/T3-JosephMorelYee.pdf)
+* [T4 Paper Prototyping Part 1](assignments/T4-JosephMorelYee.pdf)
