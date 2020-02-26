@@ -1,23 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import Landing from './components/Landing';
+import Degree from "./components/Degree";
+import Explore from "./components/Explore";
+import Error from './components/Error';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Finding Your Way
-        </h1>
-        <button>
-          View current degree progress
-        </button>
-        <button>
-          Explore degree options
-        </button>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+       <Router>
+        <div className="App">
+          <Switch>
+           <Route path="/" component={Landing} exact/>
+           <Route path="/degree" component={Degree}/>
+           <Route path="/explore" component={Explore}/>
+           <Route component={Error}/>
+         </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
