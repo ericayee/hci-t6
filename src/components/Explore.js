@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from 'react-router-dom';
 import Select from 'react-select';
 import DegreeList from './DegreeList';
+import { degrees } from  '../data/DegreeData';
 
 const yearOptions = [
   { value: '2017', label: '2017' },
@@ -16,30 +17,6 @@ const collegeOptions = [
   { value: 'khoury', label: 'Khoury College of Computer Sciences' }
 ];
 
-const degreeList = [
-  {
-    value: 'bs-mecheng',
-    college: 'coe',
-    program: 'Mechanical Engineering',
-    degree: 'B.S. Mechanical Engineering',
-    description: "lorem ipsum"
-  },
-  {
-    value: 'ba-gdesign',
-    college: 'camd',
-    program: 'Art + Design',
-    degree: 'B.A. Graphic Design',
-    description: "lorem ipsum"
-  },
-  {
-    value: 'bs-compsci',
-    college: 'khoury',
-    program: 'Computer Science',
-    degree: 'B.S. Computer Science',
-    description: "lorem ipsum"
-  }
-];
-
 let currentList = [];
 
 class Explore extends Component {
@@ -51,16 +28,12 @@ class Explore extends Component {
     };
   }
 
-  componentDidUpdate() {
-    // currentList = degreeList.filter(d => d.college === this.state.college);
-  }
-
   handleYear(val) {
     this.setState({ year: val.value });
   };
 
   handleCollege(val) {
-    currentList = degreeList.filter(d => d.college === val.value);
+    currentList = degrees.filter(d => d.college === val.value);
     this.setState({ college: val.value });
   };
 

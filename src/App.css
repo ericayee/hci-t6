@@ -24,3 +24,29 @@
   width: 400px;
   margin: 0 auto;
 }
+
+.degree-listing-wrapper {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.degree-listing-name {
+  flex-basis: 75%;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: left;
+}
+
+.degree-listing-learn {
+  text-decoration: underline;
+  padding: 1em;
+}
+
+.degree-listing-view {
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 1em;
+}

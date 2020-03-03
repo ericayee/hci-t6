@@ -1,18 +1,23 @@
 import React, { Component } from "react";
+import DegreeListing from './DegreeListing';
 
 class DegreeList extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      // list: this.props.data
-    };
+
   }
 
   render() {
     return (
       <div>
-        <p>degrees!</p>
-        {this.props.data.map(d => (<p key={d.value}>{d.degree}</p>))}
+        {this.props.data.map(d => (
+          <DegreeListing
+            key={d.value+1}
+            value={d.value}
+            program={d.program}
+            degree={d.degree}
+            description={d.description}
+           />))}
       </div>
     );
   }
