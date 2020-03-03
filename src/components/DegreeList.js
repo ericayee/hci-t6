@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import DegreeListing from './DegreeListing';
 
 class DegreeList extends Component {
-  constructor(props) {
-    super(props);
-
-  }
-
   render() {
     return (
       <div>
@@ -17,6 +12,7 @@ class DegreeList extends Component {
             program={d.program}
             degree={d.degree}
             description={d.description}
+            link={d.link}
            />))}
       </div>
     );

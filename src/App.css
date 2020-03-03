@@ -26,6 +26,10 @@
 }
 
 .degree-listing-wrapper {
+  margin: 1em;
+}
+
+.degree-listing-flex {
   width: 80%;
   margin-left: 10%;
   display: flex;
@@ -34,19 +38,41 @@
 }
 
 .degree-listing-name {
-  flex-basis: 75%;
+  flex-basis: 60%;
   font-size: 2em;
   font-weight: 400;
   text-align: left;
 }
 
 .degree-listing-learn {
+  padding: .5em;
+  cursor: pointer;
+}
+
+.underline-text {
   text-decoration: underline;
-  padding: 1em;
 }
 
 .degree-listing-view {
   text-transform: uppercase;
   text-decoration: underline;
-  padding: 1em;
+  padding: .5em;
+}
+
+.degree-listing-link {
+  padding: .5em;
+}
+
+.degree-listing-desc {
+  margin-left: 10%;
+  text-align: left;
+  width: 70%;
+}
+
+.info-icon {
+  width: 20px;
+}
+
+.arrow-icon {
+  width: 10px;
 }

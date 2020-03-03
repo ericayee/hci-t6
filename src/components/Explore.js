@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import { NavLink } from 'react-router-dom';
 import Select from 'react-select';
 import DegreeList from './DegreeList';
+import ReactTooltip from 'react-tooltip';
 import { degrees } from  '../data/DegreeData';
+import info from '../media/info-icon.svg';
+
+const catalogYearTooltipText = "The Catalog Year is the year a student entered the university.";
 
 const yearOptions = [
   { value: '2017', label: '2017' },
@@ -48,7 +52,10 @@ class Explore extends Component {
         <h2>Explore other degree options</h2>
 
         <div className="select-wrapper">
-          <h4>Catalog Year</h4>
+          <h4>Catalog Year
+            <span><img data-tip={catalogYearTooltipText} src={info} className="info-icon" alt="info icon" /></span>
+            <ReactTooltip place="top" type="dark" effect="solid"/>
+          </h4>
           <Select
             className="select-menu"
             options={yearOptions}
