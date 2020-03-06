@@ -23,10 +23,11 @@
 
 .info-icon {
   width: 20px;
+  margin-left: 1px;
+
 }
 
 .MultipleGPA {
-  cursor: pointer;
   border: none;
   outline: none;
   font-size: 18px;
@@ -35,12 +36,13 @@
 
 .dropDownGPA {
   width: 10px;
+  margin-left: 10px;
 }
 
 .expandedGPASection{
   text-align: left;
   font-size: 15px;
-  margin-left: 7%;
+  margin-left: 4%;
 
 }
 
