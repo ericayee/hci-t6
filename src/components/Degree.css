@@ -41,7 +41,7 @@
 
 .expandedGPASection{
   text-align: left;
-  font-size: 15px;
+  font-size: 17px;
   margin-left: 4%;
 
 }
@@ -49,11 +49,11 @@
 
 .ReqFormat {
   margin-left: 2%;
-text-align: left;
+  text-align: left;
 }
 
 .requirementTable {
-margin-left: 10%;
+  margin-left: 10%;
 
 }
 
@@ -67,5 +67,5 @@ background-color: orange;
 }
 
 table td {
-max-width: 15%;
+max-width: 30%;
 }

@@ -7,7 +7,7 @@ import arrowUp from '../media/arrow-up.svg';
 import arrowDown from '../media/arrow-down.svg';
 
 
-const CompletedRequirementsTooltipText = "The Catalog Year is the year a student entered the university.";
+const CompletedRequirementsTooltipText = "Each degree is broken down into a series of requirements, including both major requirements and university-wide requirements";
 const MajorGPATooltipText = "Degree GPA only includes courses that fulfill the requirements of a student's major";
 const UniversityDegreeTooltipText = "University GPA includes only courses taken at Northeastern";
 const SemesterHoursTooltipText = "Only courses taken at Northeastern count towards Semester Hours";
@@ -31,25 +31,25 @@ class Degree extends Component {
       <h2>Summary</h2>
       </div>
       <div className="sumText">
-      <h4> Degree: CS/Art</h4>
-      <h4> Credits: 30/100 Required</h4>
-      <h4> University Credits: 22/100 Required</h4>
-      <h4> Completed Requirements: 2/8
+      <p> <b>Degree:</b> Computer Science/Media Art</p>
+      <p> <b>Credits:</b> 30/100 Required</p>
+      <p> <b> University Credits: </b> 22/100 Required</p>
+      <p> <b> Completed Requirements:</b> 2/8
           <span><img data-tip={CompletedRequirementsTooltipText} src={info} className="info-icon" alt="info icon" /></span>
           <ReactTooltip place="top" type="dark" effect="solid"/>
-      </h4>
+      </p>
 
-      <h4> Semester Hours : 30/110 Required
+      <p> <b> Semester Hours: </b> 30/64 Required
           <span><img data-tip={SemesterHoursTooltipText} src={info} className="info-icon" alt="info icon" /></span>
           <ReactTooltip place="top" type="dark" effect="solid"/>
-      </h4>
+      </p>
 
       <button type="button" class="MultipleGPA" onClick={() => this.setState({
         expandedGPA: !this.state.expandedGPA
       })}>
-        <h4> Total GPA : 3.11
+        <p> <b> Total GPA: </b> 3.11
         <span><img src={this.state.expandedGPA ? arrowUp : arrowDown} className="dropDownGPA" alt="dropDownGPA" /></span>
-        </h4>
+        </p>
 
       </button>
       {this.state.expandedGPA &&
@@ -58,14 +58,14 @@ class Degree extends Component {
         <p> A minimum degree GPA of 2.3 if required to graduate. </p>
 
 
-          <h4> Degree GPA: 3.0
+          <p> <b> Degree GPA:</b> 3.0
             <span><img data-tip={MajorGPATooltipText} src={info} className="info-icon" alt="info icon" /></span>
             <ReactTooltip place="top" type="dark" effect="solid"/>
-          </h4>
-          <h4> University GPA: 3.1
+          </p>
+          <p> <b> University GPA: </b> 3.1
             <span><img data-tip={UniversityDegreeTooltipText} src={info} className="info-icon" alt="info icon" /></span>
             <ReactTooltip place="top" type="dark" effect="solid"/>
-          </h4>
+          </p>
         </div>}
 </div>
 
@@ -77,7 +77,7 @@ class Degree extends Component {
       <div className="header1">
       <h2>Computer Science </h2>
       </div>
-      <p> 1/3 Computer Science Requirements Satisfied </p>
+      <p> 1/3 of Computer Science Requirements Satisfied </p>
 
       <div className="ReqFormat">
       <h4> Overview Requirements </h4>
@@ -177,7 +177,7 @@ class Degree extends Component {
       <h2> Art </h2>
       </div>
 
-      <p> 0/2 Media Art Requirements Satisfied </p>
+      <p> 0/2 of  Media Art Requirements Satisfied </p>
 
       <div className="ReqFormat">
       <h4> Required Media Art Courses </h4>
