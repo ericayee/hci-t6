@@ -5,6 +5,7 @@ import ReactTooltip from 'react-tooltip';
 import info from '../media/info-icon.svg';
 import arrowUp from '../media/arrow-up.svg';
 import arrowDown from '../media/arrow-down.svg';
+import DegreeSidebar from "./DegreeSidebar";
 
 
 const CompletedRequirementsTooltipText = "Each degree is broken down into a series of requirements, including both major requirements and university-wide requirements";
@@ -25,9 +26,11 @@ class Degree extends Component {
 
     return (
       <div className="degree-wrapper">
+      <DegreeSidebar/>
       <NavLink to="/">Home</NavLink>
       <div className="summary">
       <div className="header1">
+      <a id="summary"/>
       <h2>Summary</h2>
       </div>
       <div className="sumText">
@@ -75,6 +78,7 @@ class Degree extends Component {
 
       <div className="Computer Science">
       <div className="header1">
+      <a id="main-requirements"/>
       <h2>Computer Science </h2>
       </div>
       <p> 1/3 of Computer Science Requirements Satisfied </p>
@@ -174,6 +178,7 @@ class Degree extends Component {
 </div>
       <div className="Media Art">
       <div className="header1">
+      <a id="art-requirements"/>
       <h2> Art </h2>
       </div>
 
@@ -280,6 +285,7 @@ class Degree extends Component {
 
       <div className="NUpath">
       <div className="header1">
+      <a id="general-requirements"/>
       <h2> NUPath </h2>
       </div>
 
@@ -348,6 +354,7 @@ class Degree extends Component {
       </div>
 
       <div className="Transfer">
+      <a id="transfer"/>
       <div className="header1">
       <h2> Transfer Credits </h2>
       </div>
