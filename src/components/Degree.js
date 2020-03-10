@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
 import './Degree.css';
 import ReactTooltip from 'react-tooltip';
 import info from '../media/info-icon.svg';
@@ -27,7 +27,6 @@ class Degree extends Component {
     return (
       <div className="degree-wrapper">
       <DegreeSidebar/>
-      <NavLink to="/">Home</NavLink>
       <div className="summary">
       <div className="header1">
       <a id="summary"/>
@@ -39,7 +38,7 @@ class Degree extends Component {
       <p> <b> University Credits: </b> 22/100 Required</p>
       <p> <b> Completed Requirements:</b> 2/8
           <span><img data-tip={CompletedRequirementsTooltipText} src={info} className="info-icon" alt="info icon" /></span>
-          <ReactTooltip place="top" type="dark" effect="solid"/>
+          <ReactTooltip place="top" type="dark" effect="solid" multiline={true}/>
       </p>
 
       <p> <b> Semester Hours: </b> 30/64 Required

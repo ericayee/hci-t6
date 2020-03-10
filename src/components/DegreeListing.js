@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import arrowUp from '../media/arrow-up.svg';
 import arrowDown from '../media/arrow-down.svg';
 import arrowUpRight from '../media/arrow-up-right.svg';
@@ -25,10 +26,12 @@ class DegreeListing extends Component {
               <span><img src={this.state.learnMore ? arrowUp : arrowDown} className="arrow-icon" alt="arrow" /></span>
             </div>
           <div className="degree-listing-link">
-            <a href={this.props.link} target="_blank">Catalog page&nbsp;
-            <span><img src={arrowUpRight} className="arrow-icon" alt="upper right arrow" rel="noopener noreferrer" /></span></a>
+            <a href={this.props.link} target="_blank" rel="noopener noreferrer">Catalog page&nbsp;
+            <span><img src={arrowUpRight} className="arrow-icon" alt="upper right arrow" /></span></a>
           </div>
-          <div className="degree-listing-view">View degree</div>
+          <Link to="/degree">
+            <div className="degree-listing-view">View degree</div>
+          </Link>
         </div>
         {this.state.learnMore &&
           <div className="degree-listing-desc">{this.props.description}</div>}
