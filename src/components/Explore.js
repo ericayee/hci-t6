@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import DegreeList from './DegreeList';
 import ReactTooltip from 'react-tooltip';
@@ -47,7 +47,9 @@ class Explore extends Component {
 
     return (
       <div className="explore-wrapper">
-        <NavLink to="/">Home</NavLink>
+        <Link to='/'>
+		      <button class="home-btn">Home</button>
+		    </Link>
 
         <h2>Explore other degree options</h2>
 

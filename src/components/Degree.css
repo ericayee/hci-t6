@@ -83,17 +83,55 @@ max-width: 30%;
   padding-top: 20px;
 }
 
-.sidenav a, .dropdown-btn {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+.home-btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 7px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  margin:10px;
 }
 
-.sidenav a:hover {
+.home-btn:hover {
+  background-color: orange;
+  color: white;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: block;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
 }
 
 .dropdown-container {
