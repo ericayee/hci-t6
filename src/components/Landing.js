@@ -7,7 +7,10 @@ class Landing extends Component {
       <div className="landing-wrapper">
         <h1>Finding Your Way</h1>
         <div>
-          <Link to="/degree">
+          <Link to={{
+            pathname: '/degree',
+            degreeName: 'B.S. Computer Science/Media Art'
+          }}>
             <button class="home-btn">View current degree progress</button>
           </Link>
           <Link to="/explore">

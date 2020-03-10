@@ -19,11 +19,12 @@ class Degree extends Component {
     super(props);
     this.state = {
       expandedGPA : false,
+      degreeName : this.props.location.degreeName
     };
   }
 
   render() {
-
+    console.log(this.props.location.degreeName);
     return (
       <div className="degree-wrapper">
       <DegreeSidebar/>
@@ -33,7 +34,9 @@ class Degree extends Component {
       <h2>Summary</h2>
       </div>
       <div className="sumText">
-      <p> <b>Degree:</b> Computer Science/Media Art</p>
+
+      <p> <b>Degree:</b> {this.state.degreeName}</p>
+      {/*<p> <b>Degree:</b> Computer Science/Media Art</p>*/}
       <p> <b>Credits:</b> 30/100 Required</p>
       <p> <b> University Credits: </b> 22/100 Required</p>
       <p> <b> Completed Requirements:</b> 2/8

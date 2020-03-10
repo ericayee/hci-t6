@@ -29,7 +29,10 @@ class DegreeListing extends Component {
             <a href={this.props.link} target="_blank" rel="noopener noreferrer">Catalog page&nbsp;
             <span><img src={arrowUpRight} className="arrow-icon" alt="upper right arrow" /></span></a>
           </div>
-          <Link to="/degree">
+          <Link to={{
+            pathname: '/degree',
+            degreeName: this.props.degree
+          }}>
             <div className="degree-listing-view">View degree</div>
           </Link>
         </div>
