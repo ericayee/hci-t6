@@ -5,7 +5,7 @@ const Error = () => {
     return (
        <div>
           <p>Page does not exist :(</p>
-          <p>Go <NavLink to="/">home</NavLink></p>
+          <p>Go <NavLink to="/hci-t6/home">home</NavLink></p>
        </div>
     );
 }
