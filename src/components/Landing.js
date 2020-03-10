@@ -8,12 +8,12 @@ class Landing extends Component {
         <h1>Finding Your Way</h1>
         <div>
           <Link to={{
-            pathname: '/degree',
+            pathname: '/hci-i6/degree',
             degreeName: 'B.S. Computer Science/Media Art'
           }}>
             <button class="home-btn">View current degree progress</button>
           </Link>
-          <Link to="/explore">
+          <Link to="/hci-i6/explore">
             <button class="home-btn">Explore degree options</button>
           </Link>
         </div>

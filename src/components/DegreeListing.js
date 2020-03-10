@@ -30,7 +30,7 @@ class DegreeListing extends Component {
             <span><img src={arrowUpRight} className="arrow-icon" alt="upper right arrow" /></span></a>
           </div>
           <Link to={{
-            pathname: '/degree',
+            pathname: '/hci-i6/degree',
             degreeName: this.props.degree
           }}>
             <div className="degree-listing-view">View degree</div>
