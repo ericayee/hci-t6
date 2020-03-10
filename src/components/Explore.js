@@ -47,7 +47,7 @@ class Explore extends Component {
 
     return (
       <div className="explore-wrapper">
-        <Link to='/'>
+        <Link to='/hci-t6/home'>
 		      <button class="home-btn">Home</button>
 		    </Link>
 
