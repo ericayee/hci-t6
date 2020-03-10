@@ -12,9 +12,9 @@ class App extends Component {
        <Router>
         <div className="App">
           <Switch>
-           <Route path="/hci-i6/home" component={Landing} exact/>
-           <Route path="/hci-i6/degree" component={Degree}/>
-           <Route path="/hci-i6/explore" component={Explore}/>
+           <Route path="/hci-t6/home" component={Landing} exact/>
+           <Route path="/hci-t6/degree" component={Degree}/>
+           <Route path="/hci-t6/explore" component={Explore}/>
            <Route component={Error}/>
          </Switch>
         </div>

@@ -24,7 +24,7 @@ class DegreeSidebar extends Component {
   render() {
     return (
       <div class="sidenav">
-		<Link to='/hci-i6/home'>
+		<Link to='/hci-t6/home'>
 		  <button class="home-btn">Home</button>
 		</Link>
         <a href="#summary">Summary</a>
