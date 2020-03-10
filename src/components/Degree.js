@@ -35,7 +35,9 @@ class Degree extends Component {
       </div>
       <div className="sumText">
 
-      <p> <b>Degree:</b> {this.state.degreeName}</p>
+      <p> <b>Degree:</b> {
+        this.props.location.degreeName ? this.props.location.degreeName : 'B.S. Computer Science/Media Art'
+      }</p>
       {/*<p> <b>Degree:</b> Computer Science/Media Art</p>*/}
       <p> <b>Credits:</b> 30/100 Required</p>
       <p> <b> University Credits: </b> 22/100 Required</p>
@@ -49,7 +51,7 @@ class Degree extends Component {
           <ReactTooltip place="top" type="dark" effect="solid"/>
       </p>
 
-      <button type="button" class="MultipleGPA" onClick={() => this.setState({
+      <button type="button" className="MultipleGPA" onClick={() => this.setState({
         expandedGPA: !this.state.expandedGPA
       })}>
         <p> <b> Total GPA: </b> 3.11

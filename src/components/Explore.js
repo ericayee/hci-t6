@@ -47,8 +47,8 @@ class Explore extends Component {
 
     return (
       <div className="explore-wrapper">
-        <Link to='/hci-t6/home'>
-		      <button class="home-btn">Home</button>
+        <Link to='/'>
+		      <button className="home-btn">Home</button>
 		    </Link>
 
         <h2>Explore other degree options</h2>

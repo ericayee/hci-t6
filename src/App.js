@@ -9,12 +9,20 @@ import Error from './components/Error';
 class App extends Component {
   render() {
     return (
-       <Router>
+       <Router basename='/hci-t6'>
         <div className="App">
-          <Switch>
-           <Route path="/hci-t6/home" component={Landing} exact/>
-           <Route path="/hci-t6/degree" component={Degree}/>
-           <Route path="/hci-t6/explore" component={Explore}/>
+        <Switch>
+          <Route path="/" component={Landing} exact/>
+          <Route path="/home" component={Landing} exact/>
+          <Route path="/degree" component={Degree}/>
+          <Route path="/explore" component={Explore}/>
+          {/*
+            <Route path={`${process.env.PUBLIC_URL}/`} component={Landing} />
+            <Route path={`${process.env.PUBLIC_URL}/degree`} component={Degree} />
+          <Route path={`${process.env.PUBLIC_URL}/explore`} component={Explore} />*/}
+           {/*<Route path="/home" component={Landing} exact/>
+           <Route path="/degree" component={Degree}/>
+           <Route path="/explore" component={Explore}/>*/}
            <Route component={Error}/>
          </Switch>
         </div>
